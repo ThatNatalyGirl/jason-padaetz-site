@@ -30,22 +30,32 @@ x.addEventListener("click", function(){
 
 //lightbox
 var makeLightBox = function() {
-    var imageSource = event.target.getAttribute("png");
-    var $overlay = document.createElement("div");
-    $overlay.classList.add("lightbox-overlay");
+	var imageSource = event.target.getAttribute("src");
+	var $overlay = document.createElement("div");
+	$overlay.classList.add("lightbox-overlay");
 
-    var $lightbox = document.createElement("div");
-    $lightbox.classList.add("lightbox");
-    
-    var $image = document.createElement("img");
-    $image.setAttribute("png", imageSource);
+	var $lightbox = document.createElement("div");
+	$lightbox.classList.add("lightbox");
+	
+	var $image = document.createElement("img");
+	$image.setAttribute("src", imageSource);
 
-    document.body.appendChild($overlay);
-    document.body.appendChild($lightbox);
-    $lightbox.appendChild($image);
+	document.body.appendChild($overlay);
+	document.body.appendChild($lightbox);
+	$lightbox.appendChild($image);
 
-    $overlay.addEventListener("click",function(){
-        document.body.removeChild($overlay);
-        document.body.removeChild($lightbox);
-    })
+	$overlay.addEventListener("click",function(){
+		document.body.removeChild($overlay);
+		document.body.removeChild($lightbox);
+	})
 };
+
+
+var $thumbnails = document.querySelectorAll(".thumbnail");
+$thumbnails.forEach(function($thumbnail){
+	$thumbnail.addEventListener("click", makeLightBox);
+
+})
+
+
+
