@@ -1,0 +1,156 @@
+
+/* 0. Reset ================================= */
+@import 'reset';
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	font-family: Calibri, Optima, Arial, sans-serif;
+	text-transform: uppercase;
+	margin: 30px 5%;
+}
+
+/* 2. Content ================================= */
+header{
+	margin-bottom: 30px;
+
+	h1{
+		font-size: 35px;
+		font-weight: bold;
+	}
+}
+
+nav{
+	font-size: 28px;
+	position: absolute;
+	right: 5%;
+	top: 30px; 
+
+	.hamburger{
+		div{
+			background-color: #000;
+			height: 8px;
+			width: 55px;
+			border-radius: 3px;
+			margin-top: 7px;
+		}
+	}
+
+	ul{
+		position: absolute;
+		background: #fff;
+		border: 2px solid #000;
+		padding: 45px 5% 0px;
+		width: 270px;
+		top: 10px;
+		right: 5%;
+		transition: 5s;
+
+		div{
+			cursor: pointer;
+			position: absolute;
+			right: 20px;
+			top: 10px;
+			transition: .5s;
+			padding: 3px 7px;
+			border-radius: 10px;
+
+			&:hover{
+				background: #989fa7;
+				transition: .5s;
+			}
+		}
+
+		li{
+			margin-bottom: 15px;
+		}
+
+		a{
+			text-decoration: none;
+			color: #000;
+			transition: .5s;
+			padding: 3px 7px;
+			border-radius: 10px;
+
+			&:hover{
+				background: #989fa7;
+				transition: .5s;
+			}	
+		}
+	}
+}
+
+.home{
+	section{
+		background: url(../img/bg.jpg) center no-repeat;
+		background-size: cover;
+		box-shadow: 2px 2px 2px 2px #707070;
+		border: 12px solid #fff;
+		width: 100%;
+		height: 100vh; 
+	}
+}
+
+
+.artistStatement{
+	h2{
+		margin: 50px 0 30px;
+		font-size: 28px;
+	}
+
+	p{
+		font-size: 20px;
+	}
+}
+
+.artwork{
+	section{
+		ul{
+			display: flex;
+			flex-wrap: wrap;	
+			justify-content: space-between;
+		}
+		img{
+			width: 300px;
+			height: 300px;	
+			margin-top: 30px;
+		}
+
+	}
+}
+
+
+@media screen and (min-width: 878px){
+	header{
+		h1{
+			font-size: 60px;
+		}	
+	}
+
+	.home{
+		section{
+			background: url(../img/bg.jpg) center no-repeat;
+			background-size: 100%;
+		}
+	}		
+}
+
+@media screen and (min-width: 1080px){
+	header{
+		h1{
+			font-size: 70px;
+
+		}	
+	}
+}
+
+
+
+
+
