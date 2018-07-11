@@ -134,7 +134,7 @@ nav ul a:hover {
 }
 
 .home section {
-	background: url(../img/bg.png) center no-repeat;
+	background: url(../img/bg1.png) center no-repeat;
 	background-size: cover;
 	box-shadow: 2px 2px 2px 2px #707070;
 	border: 12px solid #fff;
@@ -250,6 +250,8 @@ nav ul a:hover {
 	cursor: pointer;
 	color: black;
 	font-weight: bold;
+	width: 100%;
+	height: auto;
 }
 
 .contact section a:hover {
