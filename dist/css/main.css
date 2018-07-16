@@ -61,7 +61,6 @@ table {
 body {
 	background: #fff;
 	font-family: Calibri, Optima, Arial, sans-serif;
-	text-transform: uppercase;
 	margin: 30px 5%;
 }
 
@@ -71,8 +70,10 @@ header {
 }
 
 header h1 {
-	font-size: 35px;
+	font-size: 31px;
 	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px #707070;
 }
 
 nav {
@@ -80,6 +81,7 @@ nav {
 	position: absolute;
 	right: 5%;
 	top: 25px;
+	text-transform: uppercase;
 }
 
 nav .hamburger div {
@@ -163,13 +165,15 @@ nav ul a:hover {
 }
 
 .artistStatement h2 {
-	margin: 50px 0 30px;
+	margin: 70px 0 30px;
 	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .artistStatement p {
 	font-size: 16px;
-	line-height: 20px;
+	line-height: 22px;
 }
 
 .artwork section ul {
@@ -182,6 +186,7 @@ nav ul a:hover {
 	width: 300px;
 	height: 300px;
 	margin-top: 30px;
+	box-shadow: 2px 2px 2px 2px #707070;
 }
 
 .thumbnail {
@@ -239,6 +244,7 @@ nav ul a:hover {
 .contact section h2 {
 	font-size: 30px;
 	text-decoration: underline;
+	text-transform: uppercase;
 }
 
 .contact section p {
@@ -266,6 +272,12 @@ sup {
 	font-size: smaller;
 }
 
+@media screen and (min-width: 400px) {
+	header h1 {
+		font-size: 35px;
+	}
+}
+
 @media screen and (min-width: 878px) {
 	header h1 {
 		font-size: 60px;
@@ -278,7 +290,8 @@ sup {
 		font-size: 28px;
 	}
 	.artistStatement p {
-		font-size: 18px;
+		font-size: 20px;
+		line-height: 25px;
 		margin: 0 5%;
 	}
 	nav {
