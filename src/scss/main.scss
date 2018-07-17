@@ -182,6 +182,7 @@ nav{
 		height: 100vh;
 		display: block;
 		position: absolute;
+		z-index: -1;
 		
 		&::after {
 			content: "";
